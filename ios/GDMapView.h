@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 @interface GDMapView : MAMapView
+
+- (void)setZoom:(float)zoom;
+- (void)setCenter:(NSDictionary *)coordinateObj;
+- (void)setMarker:(NSDictionary *)Options;
 
 @end

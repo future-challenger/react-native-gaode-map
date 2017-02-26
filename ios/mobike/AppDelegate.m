@@ -35,6 +35,7 @@
   
   
   [AMapServices sharedServices].apiKey = @"94fdc128a296bbabebf72b9300341a5a";
+  [AMapServices sharedServices].enableHTTPS = YES;
   
   return YES;
 }

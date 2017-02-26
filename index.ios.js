@@ -20,11 +20,7 @@ export default class mobike extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          地图
-        </Text>
-        <GDMapView />
-
+        <GDMapView style={{ flex: 1, }} />
       </View>
     );
   }
@@ -34,7 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {

@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTViewManager.h>
 
+
+@class GDMapView;
+
 @interface GDMapViewManager : RCTViewManager
+
+- (void)setUp;
+- (void)sendEvent:(GDMapView *)mapView params:(NSDictionary *)params;
 
 @end
