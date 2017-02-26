@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import <React/RCTComponent.h>
 
 @interface GDMapView : MAMapView
+
+@property(nonatomic, assign) NSInteger count;
+@property(nonatomic, copy) RCTBubblingEventBlock onChange;
 
 - (void)setZoom:(float)zoom;
 - (void)setCenter:(NSDictionary *)coordinateObj;

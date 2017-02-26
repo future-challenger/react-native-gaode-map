@@ -56,6 +56,7 @@
 		8AC3088E1E6121F10085080C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3088D1E6121F10085080C /* libc++.tbd */; };
 		8AC308911E612A260085080C /* GDMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC308901E612A260085080C /* GDMapView.m */; };
 		8AC3089B1E619B1A0085080C /* GDMapViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3089A1E619B1A0085080C /* GDMapViewManager.m */; };
+		8AC3089E1E62D5320085080C /* GDPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3089D1E62D5320085080C /* GDPointAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +298,8 @@
 		8AC308901E612A260085080C /* GDMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDMapView.m; path = ../../GDMapView.m; sourceTree = "<group>"; };
 		8AC308991E619B1A0085080C /* GDMapViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMapViewManager.h; sourceTree = "<group>"; };
 		8AC3089A1E619B1A0085080C /* GDMapViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMapViewManager.m; sourceTree = "<group>"; };
+		8AC3089C1E62D5320085080C /* GDPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPointAnnotation.h; sourceTree = "<group>"; };
+		8AC3089D1E62D5320085080C /* GDPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPointAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -584,6 +587,8 @@
 				8AC308901E612A260085080C /* GDMapView.m */,
 				8AC308991E619B1A0085080C /* GDMapViewManager.h */,
 				8AC3089A1E619B1A0085080C /* GDMapViewManager.m */,
+				8AC3089C1E62D5320085080C /* GDPointAnnotation.h */,
+				8AC3089D1E62D5320085080C /* GDPointAnnotation.m */,
 			);
 			name = Classes;
 			path = mobike/Classes;
@@ -1024,6 +1029,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				8AC308911E612A260085080C /* GDMapView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				8AC3089E1E62D5320085080C /* GDPointAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,7 +1133,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rn.map.gaode;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haoqix.app.-";
 				PRODUCT_NAME = mobike;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1150,7 +1156,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rn.map.gaode;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haoqix.app.-";
 				PRODUCT_NAME = mobike;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
