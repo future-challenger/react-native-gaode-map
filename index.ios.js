@@ -13,13 +13,14 @@ import {
 } from 'react-native';
 
 import {
+  StatusBar,
   requireNativeComponent,
-  Dimensions,
+  // Dimensions,
 } from 'react-native'
-var {height, width} = Dimensions.get('window');
+// var {height, width} = Dimensions.get('window');
 
-const SCREEN_HEIGHT = height;
-const SCREEN_WIDTH = width;
+// const SCREEN_HEIGHT = height;
+// const SCREEN_WIDTH = width;
 
 const GDMapView = requireNativeComponent('GDMapView', null)
 
@@ -28,9 +29,13 @@ export default class mobike extends Component {
     //zoomEnabled={true} zoom={13} showsCompass={false}
     return (
       <View style={styles.container}>
-
+        <StatusBar
+          translucent={true}
+          backgroundColor="rgba(0, 0, 0, 0.2)"
+          barStyle="dark-content"
+        />
         <GDMapView
-          style={{ flex: 1, }}
+          style={{ flex: 1, marginTop: 20,}}
           marker={{
             category: 1,
             latitude: 39.892520,
@@ -77,7 +82,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     // alignItems: 'SR',
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
   },
   welcome: {
     fontSize: 20,
