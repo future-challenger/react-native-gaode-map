@@ -52,6 +52,16 @@ export default class mobike extends Component {
               latitude: 39.979590,
               longitude: 116.324219,
             },
+            {
+              category: 1,
+              latitude: 39.989105,
+              longitude: 116.353915,
+            },
+            {
+              category: 1,
+              latitude: 39.998293,
+              longitude: 116.324219,
+            }
           ]}
           zoom={10}
           centerCoordinate={{ latitude: 39.909520, longitude: 116.336170 }}
