@@ -12,20 +12,66 @@ import {
   View
 } from 'react-native';
 
+import {
+  StatusBar,
+  requireNativeComponent,
+  // Dimensions,
+} from 'react-native'
+// var {height, width} = Dimensions.get('window');
+
+// const SCREEN_HEIGHT = height;
+// const SCREEN_WIDTH = width;
+
+const GDMapView = requireNativeComponent('GDMapView', null)
+
 export default class mobike extends Component {
   render() {
+    //zoomEnabled={true} zoom={13} showsCompass={false}
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <StatusBar
+          translucent={true}
+          backgroundColor="rgba(0, 0, 0, 0.2)"
+          barStyle="dark-content"
+        />
+        <GDMapView
+          style={{ flex: 1, marginTop: 20,}}
+          marker={{
+            category: 1,
+            latitude: 39.892520,
+            longitude: 116.336370,
+          }} showsCompass={false}
+          markers={[
+            {
+              category: 2,
+              latitude: 39.998293,
+              longitude: 116.352343,
+            },
+            {
+              category: 2,
+              latitude: 40.001442,
+              longitude: 116.353915,
+            },
+            {
+              category: 2,
+              latitude: 39.979590,
+              longitude: 116.324219,
+            },
+            {
+              category: 1,
+              latitude: 39.989105,
+              longitude: 116.353915,
+            },
+            {
+              category: 1,
+              latitude: 39.998293,
+              longitude: 116.324219,
+            }
+          ]}
+          zoom={10}
+          centerCoordinate={{ latitude: 39.909520, longitude: 116.336170 }}
+          showScale={false} />
+
       </View>
     );
   }
@@ -35,8 +81,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // alignItems: 'SR',
+    backgroundColor: 'white',
   },
   welcome: {
     fontSize: 20,

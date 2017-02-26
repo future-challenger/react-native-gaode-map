@@ -30,6 +30,10 @@ build/
 local.properties
 *.iml
 
+# iOS/IntelliJ
+#
+ios/.idea
+
 # node.js
 #
 node_modules/
