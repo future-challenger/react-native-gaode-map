@@ -26,10 +26,10 @@ RCT_EXPORT_VIEW_PROPERTY(marker, NSDictionary*)
 RCT_EXPORT_VIEW_PROPERTY(markers, NSArray*)
 RCT_EXPORT_VIEW_PROPERTY(zoomEnabled, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(showsCompass, BOOL)
-//RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
-RCT_CUSTOM_VIEW_PROPERTY(center, CLLocationCoordinate2D, GDMapView) {
-  [view setCenterCoordinate:json ? [RCTConvert CLLocationCoordinate2D:json] : defaultView.centerCoordinate];
-}
+RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
+//RCT_CUSTOM_VIEW_PROPERTY(center, CLLocationCoordinate2D, GDMapView) {
+//  [view setCenterCoordinate:json ? [RCTConvert CLLocationCoordinate2D:json] : defaultView.centerCoordinate];
+//}
 
 - (UIView *)view {
   GDMapView *mapView = [GDMapView new];
@@ -53,7 +53,7 @@ RCT_CUSTOM_VIEW_PROPERTY(center, CLLocationCoordinate2D, GDMapView) {
   static NSString *annotationReuseID = @"GDAnnotationID";
   GDPointAnnotation *gdAnnotation = (GDPointAnnotation *)annotation;
   MAPinAnnotationView *annotationView
-  = (MAPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationReuseID];
+    = (MAPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationReuseID];
   if(!annotationView) {
     annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationReuseID];
   }
@@ -68,13 +68,13 @@ RCT_CUSTOM_VIEW_PROPERTY(center, CLLocationCoordinate2D, GDMapView) {
 }
 
 - (void)sendEvent:(GDMapView *)mapView params:(NSDictionary *)params {
-  //  if(!mapView.onChange) {
-  //    return
-  //  }
+    if(!mapView.onChange) {
+      return;
+    }
   
   //  NSInteger c = mapView.count;
   
-  //  mapView.onChange(@{})
+    mapView.onChange(@{});
 }
 
 @end

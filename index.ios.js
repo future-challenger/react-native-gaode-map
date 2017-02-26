@@ -12,7 +12,11 @@ import {
   View
 } from 'react-native';
 
-import { requireNativeComponent } from 'react-native'
+import { 
+  requireNativeComponent, 
+  Dimensions,
+} from 'react-native'
+var {height, width} = Dimensions.get('window');
 
 const GDMapView = requireNativeComponent('GDMapView', null)
 
@@ -20,7 +24,7 @@ export default class mobike extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <GDMapView style={{ flex: 1, }} />
+        <GDMapView style={{ flex: 1, }}  />
       </View>
     );
   }
@@ -30,8 +34,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    // alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'stretch',
+    backgroundColor: 'blue',
   },
   welcome: {
     fontSize: 20,

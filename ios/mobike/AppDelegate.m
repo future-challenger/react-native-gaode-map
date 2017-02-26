@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [AMapServices sharedServices].apiKey = @"94fdc128a296bbabebf72b9300341a5a";
+  [AMapServices sharedServices].enableHTTPS = YES;
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
@@ -32,10 +35,6 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  
-  
-  [AMapServices sharedServices].apiKey = @"94fdc128a296bbabebf72b9300341a5a";
-  [AMapServices sharedServices].enableHTTPS = YES;
   
   return YES;
 }
