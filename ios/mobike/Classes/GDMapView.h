@@ -17,8 +17,10 @@
 
 - (void)setZoom:(float)zoom;
 
-- (void)setCenter:(NSDictionary *)coordinateObj;
+//- (void)setCenter:(NSDictionary *)coordinateObj;
 
-- (void)setMarker:(NSDictionary *)Options;
+- (void)setMarker:(NSDictionary *)option;
+- (void)setMarkers:(NSArray<NSDictionary *> *)options;
+- (void)setShowScale: (BOOL)show;
 
 @end

@@ -13,7 +13,6 @@
 
 @interface GDMapViewManager : RCTViewManager
 
-- (void)setUp;
 - (void)sendEvent:(GDMapView *)mapView params:(NSDictionary *)params;
 
 @end
