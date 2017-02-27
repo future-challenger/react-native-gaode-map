@@ -16,7 +16,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [AMapServices sharedServices].apiKey = @"94fdc128a296bbabebf72b9300341a5a";
+  [AMapServices sharedServices].apiKey = @"你的高德地图key";
   [AMapServices sharedServices].enableHTTPS = YES;
   
   NSURL *jsCodeLocation;
