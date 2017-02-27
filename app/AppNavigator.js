@@ -1,11 +1,13 @@
 import React from 'react';
 import {
-
+  View,
+  Navigator,
 } from 'react-native';
 
 // scenes
 import Login from './Login'
 import Search from './Search'
+import BikeApp from './BikeApp'
 
 export default class AppNavigator extends React.Component {
   constructor(props) {
@@ -22,18 +24,20 @@ export default class AppNavigator extends React.Component {
 
         }}
         initialRoute={{}}
-        renderScene={}
-         />
+        renderScene={this._renderScene}
+      />
     )
   }
 
   _renderScene(route, navigator) {
-    if(route.login) {
-      return <Login />
+    if (route.login) {
+      return <Login {...route} navigator={navigator} />
     }
 
-    if(route.search) {
-      return <Search />
+    if (route.search) {
+      return <Search {...route} navigator={navigator} />
     }
+
+    return <BikeApp />
   }
 }
