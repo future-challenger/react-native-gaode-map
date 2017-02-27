@@ -49,6 +49,9 @@ export default class BikeApp extends React.Component {
         longitude: 116.324219,
       }
     ];
+
+    let title = 'Title';
+
     return (
       <View style={styles.container}>
         <StatusBar
@@ -56,9 +59,23 @@ export default class BikeApp extends React.Component {
           backgroundColor="rgba(0, 0, 0, 0.2)"
           barStyle="dark-content"
         />
+        <View style={{ height: 64, backgroundColor: 'blue', justifyContent: 'center' }}>
+          <View style={{ height: 20 }}></View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <TouchableOpacity>
+              <Text></Text>
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center', }}>
+              {title}
+            </Text>
+            <TouchableOpacity>
+              <Text></Text>
+            </TouchableOpacity>
+          </View>
+        </View>
         <MapView
-          style={{ flex: 1, marginTop: 20, }}
-          marker={marker} 
+          style={{ flex: 1, }}
+          marker={marker}
           showsCompass={false}
           markers={markers}
           zoom={10}
