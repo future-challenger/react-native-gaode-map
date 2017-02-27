@@ -8,7 +8,8 @@ import {
 } from 'react-native';
 
 // const GDMapView = requireNativeComponent('GDMapView', null)
-import MapView from './MapView'
+import MapView from './MapView';
+import NavigationBar from './CommonViews';
 
 export default class BikeApp extends React.Component {
   constructor(props) {
@@ -49,6 +50,9 @@ export default class BikeApp extends React.Component {
         longitude: 116.324219,
       }
     ];
+
+    let title = 'Title';
+
     return (
       <View style={styles.container}>
         <StatusBar
@@ -56,9 +60,18 @@ export default class BikeApp extends React.Component {
           backgroundColor="rgba(0, 0, 0, 0.2)"
           barStyle="dark-content"
         />
+        <NavigationBar 
+          leftTitle='左' 
+          rightTitle='右' 
+          onLeftClick={() => {
+            console.log('===>left click');
+          }} 
+          onRightClick={() => {
+            console.log('===>right click');
+          }}  />
         <MapView
-          style={{ flex: 1, marginTop: 20, }}
-          marker={marker} 
+          style={{ flex: 1, }}
+          marker={marker}
           showsCompass={false}
           markers={markers}
           zoom={10}
