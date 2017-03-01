@@ -9,11 +9,24 @@ import {
 
 // const GDMapView = requireNativeComponent('GDMapView', null)
 import MapView from './MapView';
-import NavigationBar from './CommonViews';
+import CommonButton, { APPNavBar } from './CommonViews'
+// import NavigationBar from './CommonViews';
 
 export default class BikeApp extends React.Component {
   constructor(props) {
     super(props)
+
+    this._onLeftClick = this._onLeftClick.bind(this);
+    this._onRightClick = this._onRightClick.bind(this);
+  }
+
+  _onLeftClick() {
+    console.log('===>menu click')
+    this.props.navigator.push({ login: true })
+  }
+
+  _onRightClick() {
+    console.log('===>search click')
   }
 
   render() {
@@ -60,15 +73,13 @@ export default class BikeApp extends React.Component {
           backgroundColor="rgba(0, 0, 0, 0.2)"
           barStyle="dark-content"
         />
-        <NavigationBar 
-          leftTitle='左' 
-          rightTitle='右' 
-          onLeftClick={() => {
-            console.log('===>left click');
-          }} 
-          onRightClick={() => {
-            console.log('===>right click');
-          }}  />
+        <APPNavBar
+          title='Bike App'
+          leftTitle='Menu'
+          rightTitle='Search'
+          onLeftClick={this._onLeftClick}
+          onRightClick={this._onRightClick}
+        />
         <MapView
           style={{ flex: 1, }}
           marker={marker}
@@ -76,7 +87,8 @@ export default class BikeApp extends React.Component {
           markers={markers}
           zoom={10}
           centerCoordinate={{ latitude: 39.909520, longitude: 116.336170 }}
-          showScale={false} />
+          showScale={false}
+        />
 
         <View style={styles.toolContainer}>
           <FloatButton onClick={() => {
@@ -115,6 +127,8 @@ function FloatButton({title, style, onClick}) {
     </TouchableOpacity>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
