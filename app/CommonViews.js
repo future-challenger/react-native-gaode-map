@@ -13,26 +13,24 @@ import {
 
 export default function CommonButton({title, style, onClick}) {
   return (
-    <TouchableOpacity activeOpacity={0.7} style={[style]}>
-      <Text>{title}</Text>
+    <TouchableOpacity activeOpacity={0.5} style={[style]} onPress={() => onClick()}>
+      <View>
+        <Text>{title}</Text>
+      </View>
     </TouchableOpacity>
   );
 }
 
-export function NavigationBar({leftButton, rightButton, leftTitle, rightTitle, onLeftClick, onRightClick, title}) {
+export function APPNavBar({title, leftTitle, rightTitle, onLeftClick, onRightClick}) {
   return (
     <View style={{ height: 64, backgroundColor: 'blue', justifyContent: 'center' }}>
       <View style={{ height: 20 }} />
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-        {
-          !leftButton ? <CommonButton title={leftTitle} onClick={onLeftClick} /> : leftButton
-        }
+      <View style={{ flexDirection: 'row', flex: 1, justifyContent: 'space-between', alignItems: 'center', }}>
+        <CommonButton title={leftTitle} style={{ width: 50, height: 10, marginLeft: 10 }} onClick={onLeftClick} />
         <Text style={{ textAlign: 'center', }}>
-          {title}
+          {title || ''}
         </Text>
-        {
-          !rightButton ? <CommonButton title={rightTitle} onClick={onRightClick} /> : rightButton
-        }
+        <CommonButton title={rightTitle} style={{ width: 50, height: 10, marginRight: 10 }} onClick={onRightClick} />
       </View>
     </View>
   );
