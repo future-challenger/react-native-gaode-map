@@ -27,14 +27,14 @@ export default class AppNavigator extends React.Component {
   }
 
   _handleBackButton() {
-    for(let i = this._handlers.length - 1; i--) {
-      if(this._handlers[i]()) {
+    for (let i = this._handlers.length - 1; i >= 0; i--) {
+      if (this._handlers[i]()) {
         return true;
       }
     }
 
     const {navigator} = this.refs;
-    if(navigator && navigator.getCurrentRoutes().length > 1) {
+    if (navigator && navigator.getCurrentRoutes().length > 1) {
       navigator.pop();
       return true;
     }
@@ -55,7 +55,11 @@ export default class AppNavigator extends React.Component {
       <Navigator
         ref="navigator"
         configureScene={(route) => {
-
+          if(route.login) {
+            return Navigator.SceneConfigs.FloatFromLeft;
+          } else {
+            return Navigator.SceneConfigs.FloatFromRight;
+          }
         }}
         initialRoute={{}}
         renderScene={this._renderScene}

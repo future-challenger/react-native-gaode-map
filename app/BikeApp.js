@@ -27,6 +27,7 @@ export default class BikeApp extends React.Component {
 
   _onRightClick() {
     console.log('===>search click')
+    this.props.navigator.push({ search: true })
   }
 
   render() {
@@ -120,7 +121,7 @@ export default class BikeApp extends React.Component {
   }
 }
 
-function FloatButton({title, style, onClick}) {
+function FloatButton({ title, style, onClick }) {
   return (
     <TouchableOpacity style={style}>
       <View style={{ height: 40, width: 40, backgroundColor: 'red', borderRadius: 50 }}></View>
