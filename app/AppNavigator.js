@@ -33,7 +33,7 @@ export default class AppNavigator extends React.Component {
       }
     }
 
-    const {navigator} = this.refs;
+    const { navigator } = this.refs;
     if (navigator && navigator.getCurrentRoutes().length > 1) {
       navigator.pop();
       return true;
@@ -55,7 +55,7 @@ export default class AppNavigator extends React.Component {
       <Navigator
         ref="navigator"
         configureScene={(route) => {
-          if(route.login) {
+          if (route.login) {
             return Navigator.SceneConfigs.FloatFromLeft;
           } else {
             return Navigator.SceneConfigs.FloatFromRight;
