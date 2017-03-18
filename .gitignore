@@ -30,10 +30,6 @@ build/
 local.properties
 *.iml
 
-# iOS/IntelliJ
-#
-ios/.idea
-
 # node.js
 #
 node_modules/
@@ -43,7 +39,6 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-android/app/libs
 *.keystore
 
 # fastlane
@@ -57,5 +52,6 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 
-# VSCode
+
+#VSCode
 .vscode 

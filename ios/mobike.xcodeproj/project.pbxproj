@@ -22,7 +22,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		1FB51D656CB6A3E945424E32 /* GDMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB51349A04A553E89065AB1 /* GDMapView.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -37,26 +36,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* mobikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mobikeTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8AC3086B1E611FDA0085080C /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3086A1E611FDA0085080C /* AMapFoundationKit.framework */; };
-		8AC3086E1E611FFD0085080C /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3086C1E611FFD0085080C /* AMapSearchKit.framework */; };
-		8AC3086F1E611FFD0085080C /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3086D1E611FFD0085080C /* MAMapKit.framework */; };
-		8AC308721E6120DB0085080C /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8AC308711E6120DB0085080C /* AMap.bundle */; };
-		8AC308741E61214E0085080C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308731E61214E0085080C /* OpenGLES.framework */; };
-		8AC308761E61215E0085080C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308751E61215E0085080C /* UIKit.framework */; };
-		8AC308781E6121660085080C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308771E6121660085080C /* Foundation.framework */; };
-		8AC3087A1E6121710085080C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308791E6121710085080C /* CoreGraphics.framework */; };
-		8AC3087C1E61217B0085080C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3087B1E61217B0085080C /* QuartzCore.framework */; };
-		8AC3087E1E6121930085080C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3087D1E6121930085080C /* CoreLocation.framework */; };
-		8AC308801E61219B0085080C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3087F1E61219B0085080C /* CoreTelephony.framework */; };
-		8AC308821E6121A80085080C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308811E6121A80085080C /* SystemConfiguration.framework */; };
-		8AC308841E6121B00085080C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308831E6121B00085080C /* Security.framework */; };
-		8AC308861E6121BA0085080C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308851E6121BA0085080C /* AdSupport.framework */; };
-		8AC308881E6121C70085080C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308871E6121C70085080C /* JavaScriptCore.framework */; };
-		8AC3088A1E6121D60085080C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC308891E6121D60085080C /* libz.tbd */; };
-		8AC3088C1E6121E20085080C /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3088B1E6121E20085080C /* libstdc++.6.0.9.tbd */; };
-		8AC3088E1E6121F10085080C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC3088D1E6121F10085080C /* libc++.tbd */; };
-		8AC3089B1E619B1A0085080C /* GDMapViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3089A1E619B1A0085080C /* GDMapViewManager.m */; };
-		8AC3089E1E62D5320085080C /* GDPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC3089D1E62D5320085080C /* GDPointAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,35 +250,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mobike/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mobike/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1FB51349A04A553E89065AB1 /* GDMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMapView.m; sourceTree = "<group>"; };
-		1FB5155065ACA06CCB477084 /* GDMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMapView.h; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* mobike-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobike-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* mobike-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobike-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8AC3086A1E611FDA0085080C /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = lib/AMapFoundationKit.framework; sourceTree = "<group>"; };
-		8AC3086C1E611FFD0085080C /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = lib/AMapSearchKit.framework; sourceTree = "<group>"; };
-		8AC3086D1E611FFD0085080C /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = lib/MAMapKit.framework; sourceTree = "<group>"; };
-		8AC308711E6120DB0085080C /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = lib/MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
-		8AC308731E61214E0085080C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		8AC308751E61215E0085080C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8AC308771E6121660085080C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8AC308791E6121710085080C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8AC3087B1E61217B0085080C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8AC3087D1E6121930085080C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		8AC3087F1E61219B0085080C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		8AC308811E6121A80085080C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8AC308831E6121B00085080C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8AC308851E6121BA0085080C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		8AC308871E6121C70085080C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8AC308891E6121D60085080C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		8AC3088B1E6121E20085080C /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		8AC3088D1E6121F10085080C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		8AC308991E619B1A0085080C /* GDMapViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMapViewManager.h; sourceTree = "<group>"; };
-		8AC3089A1E619B1A0085080C /* GDMapViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMapViewManager.m; sourceTree = "<group>"; };
-		8AC3089C1E62D5320085080C /* GDPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPointAnnotation.h; sourceTree = "<group>"; };
-		8AC3089D1E62D5320085080C /* GDPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPointAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,23 +270,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC3088E1E6121F10085080C /* libc++.tbd in Frameworks */,
-				8AC3088C1E6121E20085080C /* libstdc++.6.0.9.tbd in Frameworks */,
-				8AC3088A1E6121D60085080C /* libz.tbd in Frameworks */,
-				8AC308881E6121C70085080C /* JavaScriptCore.framework in Frameworks */,
-				8AC308861E6121BA0085080C /* AdSupport.framework in Frameworks */,
-				8AC308841E6121B00085080C /* Security.framework in Frameworks */,
-				8AC308821E6121A80085080C /* SystemConfiguration.framework in Frameworks */,
-				8AC308801E61219B0085080C /* CoreTelephony.framework in Frameworks */,
-				8AC3087E1E6121930085080C /* CoreLocation.framework in Frameworks */,
-				8AC3087C1E61217B0085080C /* QuartzCore.framework in Frameworks */,
-				8AC3087A1E6121710085080C /* CoreGraphics.framework in Frameworks */,
-				8AC308781E6121660085080C /* Foundation.framework in Frameworks */,
-				8AC308761E61215E0085080C /* UIKit.framework in Frameworks */,
-				8AC308741E61214E0085080C /* OpenGLES.framework in Frameworks */,
-				8AC3086E1E611FFD0085080C /* AMapSearchKit.framework in Frameworks */,
-				8AC3086F1E611FFD0085080C /* MAMapKit.framework in Frameworks */,
-				8AC3086B1E611FDA0085080C /* AMapFoundationKit.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -451,8 +389,6 @@
 		13B07FAE1A68108700A75B9A /* mobike */ = {
 			isa = PBXGroup;
 			children = (
-				8AC308951E6199D30085080C /* Classes */,
-				8AC308701E6120BF0085080C /* Resources */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -531,7 +467,6 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mobikeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				8AC308691E611FDA0085080C /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -546,52 +481,6 @@
 				2D02E4901E0B4A5D006451C7 /* mobike-tvOSTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8AC308691E611FDA0085080C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8AC3088D1E6121F10085080C /* libc++.tbd */,
-				8AC3088B1E6121E20085080C /* libstdc++.6.0.9.tbd */,
-				8AC308891E6121D60085080C /* libz.tbd */,
-				8AC308871E6121C70085080C /* JavaScriptCore.framework */,
-				8AC308851E6121BA0085080C /* AdSupport.framework */,
-				8AC308831E6121B00085080C /* Security.framework */,
-				8AC308811E6121A80085080C /* SystemConfiguration.framework */,
-				8AC3087F1E61219B0085080C /* CoreTelephony.framework */,
-				8AC3087D1E6121930085080C /* CoreLocation.framework */,
-				8AC3087B1E61217B0085080C /* QuartzCore.framework */,
-				8AC308791E6121710085080C /* CoreGraphics.framework */,
-				8AC308771E6121660085080C /* Foundation.framework */,
-				8AC308751E61215E0085080C /* UIKit.framework */,
-				8AC308731E61214E0085080C /* OpenGLES.framework */,
-				8AC3086C1E611FFD0085080C /* AMapSearchKit.framework */,
-				8AC3086D1E611FFD0085080C /* MAMapKit.framework */,
-				8AC3086A1E611FDA0085080C /* AMapFoundationKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8AC308701E6120BF0085080C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8AC308711E6120DB0085080C /* AMap.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		8AC308951E6199D30085080C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8AC308991E619B1A0085080C /* GDMapViewManager.h */,
-				8AC3089A1E619B1A0085080C /* GDMapViewManager.m */,
-				8AC3089C1E62D5320085080C /* GDPointAnnotation.h */,
-				8AC3089D1E62D5320085080C /* GDPointAnnotation.m */,
-				1FB5155065ACA06CCB477084 /* GDMapView.h */,
-				1FB51349A04A553E89065AB1 /* GDMapView.m */,
-			);
-			name = Classes;
-			path = mobike/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,14 +570,6 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = SNXQ82A74S;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -958,7 +839,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC308721E6120DB0085080C /* AMap.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -1025,11 +905,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC3089B1E619B1A0085080C /* GDMapViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				8AC3089E1E62D5320085080C /* GDPointAnnotation.m in Sources */,
-				1FB51D656CB6A3E945424E32 /* GDMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,11 +998,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = SNXQ82A74S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
 				INFOPLIST_FILE = mobike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1133,7 +1005,6 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoqix.app.map;
 				PRODUCT_NAME = mobike;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1144,11 +1015,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SNXQ82A74S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
 				INFOPLIST_FILE = mobike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1156,7 +1022,6 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoqix.app.map;
 				PRODUCT_NAME = mobike;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
