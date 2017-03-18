@@ -1,4 +1,4 @@
-package com.mobike;
+package com.gaode.map;
 
 import android.app.Application;
 
@@ -22,7 +22,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+              new MainReactPackage()
       );
     }
   };

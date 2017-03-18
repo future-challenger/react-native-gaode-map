@@ -22,6 +22,10 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+# Android
+android/app/app-debug.apk
+android/app/app-release.apk
+
 # Android/IntelliJ
 #
 build/
