@@ -9,23 +9,25 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity,
+  NativeModules,
+  PixelRatio,
 } from 'react-native';
+
+let AnotherToastAndroid = NativeModules.AnotherToastAndroid;
 
 export default class mobike extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <TouchableOpacity style={styles.button} onPress={() => {
+          AnotherToastAndroid.show('Another Toast', AnotherToastAndroid.LONG);
+        }}>
+          <Text style={{ textAlign: 'center', }}>
+            Show Toast
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -35,18 +37,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  button: {
+    borderWidth: 1 / PixelRatio.get(),
+    borderRadius: 8,
+    borderColor: 'blue',
+    marginHorizontal: 10,
+    height: 50,
+    justifyContent: 'center',
   },
 });
 
