@@ -38,6 +38,16 @@ export default class mobike extends Component {
                 });
             }}
         />
+        <Button
+          style={{ marginTop: 10, }}
+          title='use Promise'
+          pressHandler={
+            () => {
+              AnotherToastAndroid.currentThreadNameByPromise().then((threadName) =>
+                Alert.alert('Thread Name', `thread nane: ${threadName}`, null)
+              ).catch(err => Alert.alert('Thread Name', `get thread nane error: ${err.message}`, null));
+            }}
+        />
       </View>
     );
   }

@@ -3,6 +3,7 @@ package test.demo.toastandroid;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -69,8 +70,18 @@ public class ToastModule extends ReactContextBaseJavaModule {
     try {
       String tn = Thread.currentThread().getName();
       successCallback.invoke(tn);
-    } catch(Exception e) {
+    } catch (Exception e) {
       errorCallback.invoke(e.getMessage());
+    }
+  }
+
+  @ReactMethod
+  public void currentThreadNameByPromise(Promise promise) {
+    try {
+      String tn = Thread.currentThread().getName();
+      promise.resolve(tn);
+    } catch (Exception e) {
+      promise.reject("Thread Error", e);
     }
   }
 }
