@@ -2,6 +2,7 @@ package test.demo.toastandroid;
 
 import android.widget.Toast;
 
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -61,5 +62,15 @@ public class ToastModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void show(String message, int duration) {
     Toast.makeText(getReactApplicationContext(), message, duration).show();
+  }
+
+  @ReactMethod
+  public void currentThreadName(Callback errorCallback, Callback successCallback) {
+    try {
+      String tn = Thread.currentThread().getName();
+      successCallback.invoke(tn);
+    } catch(Exception e) {
+      errorCallback.invoke(e.getMessage());
+    }
   }
 }

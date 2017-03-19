@@ -13,6 +13,7 @@ import {
   TouchableOpacity,
   NativeModules,
   PixelRatio,
+  Alert,
 } from 'react-native';
 
 let AnotherToastAndroid = NativeModules.AnotherToastAndroid;
@@ -21,16 +22,35 @@ export default class mobike extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.button} onPress={() => {
-          AnotherToastAndroid.show('Another Toast', AnotherToastAndroid.LONG);
-        }}>
-          <Text style={{ textAlign: 'center', }}>
-            Show Toast
-          </Text>
-        </TouchableOpacity>
+        <Button
+          title='show toast'
+          pressHandler={() => AnotherToastAndroid.show('Another Toast', AnotherToastAndroid.LONG)}
+        />
+        <Button
+          style={{ marginTop: 10, }}
+          title='use callback'
+          pressHandler={
+            () => {
+              AnotherToastAndroid.currentThreadName((msg) => console.log(`error message ${msg}`)
+                , (threadName) => {
+                  {/*console.Console.log(`thread nane: ${threadName}`);*/ }
+                  Alert.alert('Thread Name', `thread nane: ${threadName}`, null);
+                });
+            }}
+        />
       </View>
     );
   }
+}
+
+const Button = ({ title, style, pressHandler }) => {
+  return (
+    <TouchableOpacity style={[styles.button, style,]} onPress={pressHandler}>
+      <Text style={{ textAlign: 'center', }}>
+        {title}
+      </Text>
+    </TouchableOpacity>
+  );
 }
 
 const styles = StyleSheet.create({
