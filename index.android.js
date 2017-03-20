@@ -14,15 +14,18 @@ import {
   NativeModules,
   PixelRatio,
   Alert,
+  requireNativeComponent,
 } from 'react-native';
 
 let AnotherToastAndroid = NativeModules.AnotherToastAndroid;
+let GDMap = requireNativeComponent('GaodeMapView', null);
 
 export default class mobike extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Button
+          style={{ marginTop: 10, }}
           title='show toast'
           pressHandler={() => AnotherToastAndroid.show('Another Toast', AnotherToastAndroid.LONG)}
         />
@@ -48,6 +51,7 @@ export default class mobike extends Component {
               ).catch(err => Alert.alert('Thread Name', `get thread nane error: ${err.message}`, null));
             }}
         />
+        <GDMap style={{ marginVertical: 10, marginHorizontal: 10, backgroundColor: 'blue', flexGrow: 1, height: 100, }} />
       </View>
     );
   }

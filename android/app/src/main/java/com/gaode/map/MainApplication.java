@@ -11,6 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.util.Arrays;
 import java.util.List;
 
+import test.demo.gaodemap.GDMapPackage;
 import test.demo.toastandroid.ToastReactPackage;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -25,7 +26,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
               new MainReactPackage(),
-              new ToastReactPackage()
+              new ToastReactPackage(),
+              new GDMapPackage()
       );
     }
   };
